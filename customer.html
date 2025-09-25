@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Menu - Smart Menu Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Menu Card</h2>
+        <div class="header-controls">
+            <button onclick="window.location.href='index.html'" class="btn back-btn">Back to Home</button>
+            <button onclick="showOrderHistory()" class="btn history-btn">Order History</button>
+        </div>
+
+        <div class="table-selection">
+            <h3>Select Your Table</h3>
+            <div class="tables-grid">
+                <button class="table-btn" data-table="1">Table 1</button>
+                <button class="table-btn" data-table="2">Table 2</button>
+                <button class="table-btn" data-table="3">Table 3</button>
+                <button class="table-btn" data-table="4">Table 4</button>
+                <button class="table-btn" data-table="5">Table 5</button>
+                <button class="table-btn" data-table="6">Table 6</button>
+                <button class="table-btn" data-table="7">Table 7</button>
+                <button class="table-btn" data-table="8">Table 8</button>
+                <button class="table-btn" data-table="9">Table 9</button>
+            </div>
+        </div>
+
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="Dessert">Desserts</button>
+            <button class="category-btn" data-category="Coffee">Coffee</button>
+            <button class="category-btn" data-category="Drinks">Drinks</button>
+            <button class="category-btn" data-category="Fast Food">Fast Food</button>
+        </div>
+
+        <div id="menu-container" class="menu-grid"></div>
+
+        <div id="cart-section" class="cart-section">
+            <h3>Your Order</h3>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h4>Total: $<span id="cart-total-amount">0.00</span></h4>
+                <button id="place-order-btn" class="btn">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order History Modal -->
+    <div id="order-history-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Order History</h2>
+            <div class="order-filters">
+                <button class="filter-btn active" data-status="all">All Orders</button>
+                <button class="filter-btn" data-status="pending">Pending</button>
+                <button class="filter-btn" data-status="ready">Ready</button>
+                <button class="filter-btn" data-status="completed">Completed</button>
+            </div>
+            <div id="order-history-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

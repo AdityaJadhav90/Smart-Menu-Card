@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Smart Menu Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-section">
+            <h2>Admin Login</h2>
+            <form id="admin-login-form">
+                <input type="password" id="admin-password" placeholder="Enter Admin Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <div id="admin-panel" style="display: none;">
+            <h2>Admin Panel</h2>
+            <div class="admin-controls">
+                <button onclick="showAddItemForm()" class="btn">Add New Item</button>
+                <button onclick="showOrders()" class="btn">View Orders</button>
+                <button onclick="window.location.href='index.html'" class="btn">Back to Home</button>
+            </div>
+            <div id="add-item-form" style="display: none;">
+                <h3>Add New Menu Item</h3>
+                <form id="menu-item-form">
+                    <input type="text" id="item-name" placeholder="Item Name" required>
+                    <input type="text" id="item-category" placeholder="Category (Dessert/Coffee/Drinks/Fast Food)" required>
+                    <input type="number" id="item-price" placeholder="Price" required>
+                    <textarea id="item-description" placeholder="Description" required></textarea>
+                    <input type="text" id="item-image" placeholder="Image Path (e.g., images/coffee.jpg)" required>
+                    <button type="submit" class="btn">Add Item</button>
+                </form>
+            </div>
+            <div id="menu-items-list">
+                <h3>Current Menu Items</h3>
+                <div id="menu-items-container"></div>
+            </div>
+
+            <div id="orders-section" style="display: none;">
+                <h3>Customer Orders</h3>
+                <div id="orders-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
