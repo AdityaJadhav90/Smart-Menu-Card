@@ -28,7 +28,6 @@ Customers can place orders and admins can manage them efficiently.
 
 ## Tech Stack
 HTML | CSS | JavaScript  
-(Optional backend: Node.js / PHP / Python Flask)  
-(Optional database: MySQL / Firebase / MongoDB)
+LocalStorage
 
 ---
