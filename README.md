@@ -8,7 +8,7 @@ Customers can place orders and admins can manage them efficiently.
 ## Features
 
 ### Admin
-- Password protected (admin123)
+- Password protected: (admin123)
 - View orders
 - Mark orders: Pending, Completed, or Store in History
 
@@ -21,7 +21,7 @@ Customers can place orders and admins can manage them efficiently.
 
 ## How It Works
 1. Choose Admin or Customer.
-2. Admin: enter password → manage orders.
+2. Admin: enter password → manage orders. (admin123)
 3. Customer: browse menu → place order → enter table number.
 
 ---
@@ -31,3 +31,4 @@ HTML | CSS | JavaScript
 LocalStorage
 
 ---
+
